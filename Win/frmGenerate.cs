@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Configuration;
-using StaticGeneratorCommon;
 using System.Data.SqlClient;
 using System.IO;
 using System.Collections;
