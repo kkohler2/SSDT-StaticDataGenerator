@@ -21,18 +21,6 @@
                 <Component Id="cmp7F505D14AE1DF17327A17562DB88E646" Guid="*">
                     <File Id="fil223BF76E6009DA43FCB91680D34C919F" KeyPath="yes" Source="$(var.StaticGenerator.TargetDir)\Static Data Script Generator.pdb" />
                 </Component>
-                <Component Id="cmp9BE3443FEAB75BD7FC19430EB26B2689" Guid="*">
-                    <File Id="filBEB957871E623C9E98C40E9C60C77196" KeyPath="yes" Source="$(var.StaticGenerator.TargetDir)\Static Data Script Generator.vshost.exe" />
-                </Component>
-                <Component Id="cmp84990E56BDCC5720BB2D3AE45AC155DA" Guid="*">
-                    <File Id="fil4CFED195558343C393CFB61EF2507E83" KeyPath="yes" Source="$(var.StaticGenerator.TargetDir)\Static Data Script Generator.vshost.exe.config" />
-                </Component>
-                <Component Id="cmp7D2C1543D9CD7F0762293898BD6B539C" Guid="*">
-                    <File Id="fil997036E070F87588870E5B084105E712" KeyPath="yes" Source="$(var.StaticGenerator.TargetDir)\StaticGeneratorCommon.dll" />
-                </Component>
-                <Component Id="cmp6CDB32C278DDAEE2F45E21861BB883B8" Guid="*">
-                    <File Id="fil7D5BA58427271BFC2AE1F091AF1A79B9" KeyPath="yes" Source="$(var.StaticGenerator.TargetDir)\StaticGeneratorCommon.pdb" />
-                </Component>
             </Directory>
         </DirectoryRef>
     </Fragment>
@@ -44,10 +32,6 @@
             <ComponentRef Id="cmp44E3C853A640B32490A80667A97C5E1D" />
             <ComponentRef Id="cmp402581BB4E505DC02ADD144314113554" />
             <ComponentRef Id="cmp7F505D14AE1DF17327A17562DB88E646" />
-            <ComponentRef Id="cmp9BE3443FEAB75BD7FC19430EB26B2689" />
-            <ComponentRef Id="cmp84990E56BDCC5720BB2D3AE45AC155DA" />
-            <ComponentRef Id="cmp7D2C1543D9CD7F0762293898BD6B539C" />
-            <ComponentRef Id="cmp6CDB32C278DDAEE2F45E21861BB883B8" />
         </ComponentGroup>
     </Fragment>
 </Wix>

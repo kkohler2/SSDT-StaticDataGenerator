@@ -13,19 +13,22 @@ namespace StaticGenerator
     public partial class frmColumnSelection : Form
     {
         List<string> _columns;
+        string _tableName;
 
         public List<string> SelectedColumns { get; set; } = new List<string>();
 
-        public frmColumnSelection(List<string> columns)
+        public frmColumnSelection(List<string> columns, string tableName)
         {
             InitializeComponent();
             _columns = columns;
+            _tableName = tableName;
         }
 
         private void frmColumnSelection_Load(object sender, EventArgs e)
         {
             ((ListBox)checkedListBox1).DataSource = _columns;
             btnOK.Enabled = false;
+            label1.Text = $"Table {_tableName} does not have a primary key.";
         }
 
         private void btnOK_Click(object sender, EventArgs e)

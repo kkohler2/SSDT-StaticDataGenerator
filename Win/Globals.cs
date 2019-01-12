@@ -102,7 +102,6 @@ namespace StaticGenerator
                 string strTableDef = "DECLARE @tblTempTable TABLE (" + Environment.NewLine;
                 ArrayList strColumns = new ArrayList();
                 bool blnHasIdentity = false;
-                bool blnHasColumnsToUpdate = false;
 
                 List<string> columns = new List<string>();
                 List<bool> nullable = new List<bool>();
@@ -168,7 +167,7 @@ namespace StaticGenerator
                 // Die if we do not have a primary key
                 if (strPrimaryKeyColumns.Count == 0)
                 {
-                    using (frmColumnSelection columnSelection = new frmColumnSelection(columns))
+                    using (frmColumnSelection columnSelection = new frmColumnSelection(columns, pstrTableName))
                     {
                         columnSelection.ShowDialog();
                         strPrimaryKeyColumns.AddRange(columnSelection.SelectedColumns);

@@ -38,14 +38,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 20);
+            this.label1.Size = new System.Drawing.Size(275, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Table {0} does not have a primary key.  Select unique columns:";
+            this.label1.Text = "Table {0} does not have a primary key.";
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(17, 53);
+            this.checkedListBox1.Location = new System.Drawing.Point(12, 47);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(443, 319);
             this.checkedListBox1.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(385, 400);
+            this.btnOK.Location = new System.Drawing.Point(380, 385);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 38);
             this.btnOK.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 482);
+            this.ClientSize = new System.Drawing.Size(480, 464);
             this.ControlBox = false;
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.checkedListBox1);
