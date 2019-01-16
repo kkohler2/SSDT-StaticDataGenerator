@@ -102,6 +102,7 @@ namespace StaticGenerator
                 string strTableDef = "DECLARE @tblTempTable TABLE (" + Environment.NewLine;
                 ArrayList strColumns = new ArrayList();
                 bool blnHasIdentity = false;
+                bool blnHasColumnsToUpdate = false;
 
                 List<string> columns = new List<string>();
                 List<bool> nullable = new List<bool>();
