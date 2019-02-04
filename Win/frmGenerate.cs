@@ -80,6 +80,12 @@ namespace StaticGenerator
 
                 foreach (DataRow drTableName in dtTableList.Rows)
                 {
+                    using (SqlCommand cmd = Globals.Connection.CreateCommand())
+                    {
+                        cmd.CommandText = $"Select count(1) from {drTableName[0].ToString()}";
+                        if (Convert.ToInt32(cmd.ExecuteScalar()) == 0)
+                            continue;
+                    }
                     clbTables.Items.Add(string.Format("[{0}].[{1}]", drTableName[1].ToString(), drTableName[0].ToString()));
                 }
 
